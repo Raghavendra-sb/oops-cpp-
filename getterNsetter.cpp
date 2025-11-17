@@ -20,6 +20,18 @@ using namespace std;
 
 // };
 
+class Hero {
+    int age;
+    public:
+    void setAge(int a){
+        Hero::age = a;
+    }
+    void getAge(){
+        cout<< "Age is: " << age << endl;
+    }
+};
+
+
 struct A {
     char x;   // 1 byte
     int y;    // 4 bytes
@@ -34,6 +46,9 @@ int main(){
     //wts greedy alignment
     //
 
+    Hero h1;
+    h1.setAge(25);
+    h1.getAge();
     return 0;
 
 }
